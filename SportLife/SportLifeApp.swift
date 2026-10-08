@@ -9,7 +9,7 @@ struct SportLifeApp: App {
     do {
       container = try ModelContainer(
         for: Schema(AppSchema.models),
-        configurations: ModelConfiguration(cloudKitDatabase: .private("iCloud.app.sportlife.SportLife")))
+        configurations: ModelConfiguration(cloudKitDatabase: .private("iCloud.com.PrankMind.SportLife")))
     } catch {
       fatalError("Could not open the data store: \(error)")
     }
