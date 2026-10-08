@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 110;
 	objects = {
 
 /* Begin PBXContainerItemProxy section */
@@ -37,17 +37,13 @@
 /* Begin PBXFrameworksBuildPhase section */
 		5C0000000000000000000201 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		5C0000000000000000000211 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
@@ -83,14 +79,10 @@
 			);
 			buildRules = (
 			);
-			dependencies = (
-			);
 			fileSystemSynchronizedGroups = (
 				5C0000000000000000000021 /* SportLife */,
 			);
 			name = SportLife;
-			packageProductDependencies = (
-			);
 			productName = SportLife;
 			productReference = 5C0000000000000000000011 /* SportLife.app */;
 			productType = "com.apple.product-type.application";
@@ -112,8 +104,6 @@
 				5C0000000000000000000022 /* SportLifeTests */,
 			);
 			name = SportLifeTests;
-			packageProductDependencies = (
-			);
 			productName = SportLifeTests;
 			productReference = 5C0000000000000000000012 /* SportLifeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -147,7 +137,7 @@
 			);
 			mainGroup = 5C0000000000000000000002;
 			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
+			preferredProjectObjectVersion = 110;
 			productRefGroup = 5C0000000000000000000003 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -161,34 +151,26 @@
 /* Begin PBXResourcesBuildPhase section */
 		5C0000000000000000000203 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		5C0000000000000000000213 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5C0000000000000000000202 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		5C0000000000000000000212 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
@@ -201,7 +183,7 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		5C0000000000000000000601 /* Debug */ = {
+		5C0000000000000000000601 /* Debug configuration for PBXProject "SportLife" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -230,7 +212,7 @@
 			};
 			name = Debug;
 		};
-		5C0000000000000000000602 /* Release */ = {
+		5C0000000000000000000602 /* Release configuration for PBXProject "SportLife" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -252,14 +234,18 @@
 			};
 			name = Release;
 		};
-		5C0000000000000000000611 /* Debug */ = {
+		5C0000000000000000000611 /* Debug configuration for PBXNativeTarget "SportLife" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SportLife.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 73CAX4WUJH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SportLife-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Sport Life";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -269,10 +255,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = app.sportlife.SportLife;
+				PRODUCT_BUNDLE_IDENTIFIER = com.PrankMind.SportLife;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 6.0;
@@ -280,14 +265,18 @@
 			};
 			name = Debug;
 		};
-		5C0000000000000000000612 /* Release */ = {
+		5C0000000000000000000612 /* Release configuration for PBXNativeTarget "SportLife" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SportLife.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 73CAX4WUJH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SportLife-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Sport Life";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -297,10 +286,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = app.sportlife.SportLife;
+				PRODUCT_BUNDLE_IDENTIFIER = com.PrankMind.SportLife;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 6.0;
@@ -308,15 +296,16 @@
 			};
 			name = Release;
 		};
-		5C0000000000000000000621 /* Debug */ = {
+		5C0000000000000000000621 /* Debug configuration for PBXNativeTarget "SportLifeTests" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = app.sportlife.SportLifeTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.PrankMind.SportLifeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
@@ -328,15 +317,16 @@
 			};
 			name = Debug;
 		};
-		5C0000000000000000000622 /* Release */ = {
+		5C0000000000000000000622 /* Release configuration for PBXNativeTarget "SportLifeTests" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = app.sportlife.SportLifeTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.PrankMind.SportLifeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
@@ -354,31 +344,29 @@
 		5C0000000000000000000500 /* Build configuration list for PBXProject "SportLife" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5C0000000000000000000601 /* Debug */,
-				5C0000000000000000000602 /* Release */,
+				5C0000000000000000000601 /* Debug configuration for PBXProject "SportLife" */,
+				5C0000000000000000000602 /* Release configuration for PBXProject "SportLife" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		5C0000000000000000000501 /* Build configuration list for PBXNativeTarget "SportLife" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5C0000000000000000000611 /* Debug */,
-				5C0000000000000000000612 /* Release */,
+				5C0000000000000000000611 /* Debug configuration for PBXNativeTarget "SportLife" */,
+				5C0000000000000000000612 /* Release configuration for PBXNativeTarget "SportLife" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		5C0000000000000000000502 /* Build configuration list for PBXNativeTarget "SportLifeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5C0000000000000000000621 /* Debug */,
-				5C0000000000000000000622 /* Release */,
+				5C0000000000000000000621 /* Debug configuration for PBXNativeTarget "SportLifeTests" */,
+				5C0000000000000000000622 /* Release configuration for PBXNativeTarget "SportLifeTests" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
 	rootObject = 5C0000000000000000000001 /* Project object */;
+	validationLevel = 1;
 }
