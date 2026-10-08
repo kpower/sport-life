@@ -7,9 +7,7 @@ struct SportLifeApp: App {
 
   init() {
     do {
-      container = try ModelContainer(
-        for: Schema(AppSchema.models),
-        configurations: ModelConfiguration(cloudKitDatabase: .private("iCloud.com.PrankMind.SportLife")))
+      container = try ModelContainer(for: Schema(AppSchema.models), configurations: Self.storeConfiguration)
     } catch {
       fatalError("Could not open the data store: \(error)")
     }
@@ -23,6 +21,17 @@ struct SportLifeApp: App {
       HistoryView()
     }
     .modelContainer(container)
+  }
+
+  private static var storeConfiguration: ModelConfiguration {
+    #if DEBUG
+    // Hosting unit tests: they bring their own stores, and CI builds are unsigned, so
+    // CloudKit would crash at launch without the iCloud entitlement.
+    if ProcessInfo.processInfo.environment["XCTestConfigurationFilePath"] != nil {
+      return ModelConfiguration(isStoredInMemoryOnly: true, cloudKitDatabase: .none)
+    }
+    #endif
+    return ModelConfiguration(cloudKitDatabase: .private("iCloud.com.PrankMind.SportLife"))
   }
 
   #if DEBUG
