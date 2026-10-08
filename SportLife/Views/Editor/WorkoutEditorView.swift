@@ -26,7 +26,8 @@ struct WorkoutEditorView: View {
           TextField("Note", text: noteBinding, axis: .vertical)
         }
       }
-      ForEach(workout.orderedEntries) { entry in
+      // Explicit id: Swift 6.4 batch mode sometimes misses the @Model Identifiable conformance here.
+      ForEach(workout.orderedEntries, id: \.persistentModelID) { entry in
         EntrySection(
           entry: entry,
           selectedSet: $selectedSet,
