@@ -13,7 +13,8 @@ concurrency:
 jobs:
   build-and-test:
     name: Build & test
-    runs-on: macos-26
+    # The project file format requires Xcode 27; macos-26 images only ship Xcode 26.x.
+    runs-on: xcode-27
     timeout-minutes: 30
 
     steps:
